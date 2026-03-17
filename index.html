@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dolce Vita — Ювелирная студия в Санкт-Петербурге | Украшения на заказ с 1968</title>
+  <meta name="description" content="Ювелирная студия Dolce Vita в Санкт-Петербурге. Украшения на заказ, обручальные кольца, изделия из титана, кольца с отпечатком пальца. 3 студии в СПб, гарантия 2 года, рассрочка. Звоните!">
+  <meta name="keywords" content="ювелирная студия Санкт-Петербург, украшения на заказ СПб, обручальные кольца СПб, кольца из титана, ювелирные украшения Петербург, Dolce Vita ювелир">
+  <meta property="og:title" content="Dolce Vita — Ювелирная студия Санкт-Петербург">
+  <meta property="og:description" content="Авторские ювелирные украшения с 1968 года. Готовые изделия и создание по вашему эскизу.">
+  <meta property="og:image" content="/images/og-image.jpg">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%232C2420' width='32' height='32'/%3E%3Ctext x='16' y='22' font-family='serif' font-size='16' fill='%23C4A882' text-anchor='middle' font-weight='bold'%3EDV%3C/text%3E%3C/svg%3E" sizes="32x32">
+  
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <!-- Стили -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- ═══════════════════════════════════════════════════════════════
+       БЛОК 0: ШАПКА (Header) — sticky, меняется при скролле
+       ═══════════════════════════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#" class="header__logo" aria-label="Dolce Vita — главная">DOLCE VITA</a>
+      
+      <nav class="header__nav" aria-label="Основная навигация">
+        <ul class="header__nav-list">
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#wedding">К свадьбе</a></li>
+          <li><a href="#order">На заказ</a></li>
+          <li><a href="#scenarios">Подарки</a></li>
+          <li><a href="#about">О студии</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header__contacts">
+        <span class="header__address">м. Достоевская</span>
+        <a href="tel:+78126066970" class="header__phone">+7 (812) 606-69-70</a>
+        <button class="header__search" type="button" aria-label="Поиск"></button>
+      </div>
+      
+      <!-- Бургер для мобильного меню -->
+      <button class="header__burger" type="button" aria-label="Открыть меню" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+    </div>
+    
+    <!-- Полноэкранное мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+        <ul class="mobile-menu__list">
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#wedding">К свадьбе</a></li>
+          <li><a href="#order">На заказ</a></li>
+          <li><a href="#scenarios">Подарки</a></li>
+          <li><a href="#about">О студии</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu__contacts">
+        <a href="tel:+78126066970" class="mobile-menu__phone">+7 (812) 606-69-70</a>
+        <a href="https://wa.me/78126066970" class="mobile-menu__whatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 1: HERO — первый экран
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__image-wrap">
+        <img src="https://images.unsplash.com/photo-1515562144867-924fbb69963d?w=1400&q=90" alt="Кольцо с бриллиантом крупным планом на руке" class="hero__image" width="1200" height="800">
+      </div>
+      <div class="hero__content">
+        <p class="hero__label">ЮВЕЛИРНАЯ СТУДИЯ · САНКТ-ПЕТЕРБУРГ · С 1968</p>
+        <h1 class="hero__title">
+          Украшения,<br>
+          которые<br>
+          остаются<br>
+          с вами <em>навсегда</em>
+        </h1>
+        <p class="hero__text">Создаём авторские ювелирные украшения в Санкт-Петербурге. Готовые изделия и изготовление по вашему эскизу.</p>
+        <div class="hero__buttons">
+          <a href="#catalog" class="btn btn--primary">Смотреть каталог</a>
+          <a href="#consultation" class="btn btn--secondary">Создать своё украшение</a>
+        </div>
+        <p class="hero__facts">55 лет · 3 студии в СПб · 4.9★ на Яндексе · Гарантия 2 года</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 2: ДОВЕРИЕ — цифры и факты
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="trust section" id="trust">
+      <div class="container">
+        <div class="trust__grid">
+          <div class="trust__item animate-on-scroll">
+            <div class="trust__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="trust__number" data-target="55">0</span>
+            <span class="trust__years">лет</span>
+            <p class="trust__desc">На рынке СПб</p>
+          </div>
+          <div class="trust__divider" aria-hidden="true"></div>
+          <div class="trust__item animate-on-scroll">
+            <div class="trust__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="trust__number" data-target="3500">0</span>
+            <span class="trust__plus">+</span>
+            <p class="trust__desc">Изделий создано</p>
+          </div>
+          <div class="trust__divider" aria-hidden="true"></div>
+          <div class="trust__item animate-on-scroll">
+            <div class="trust__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="trust__number" data-target="4.9">0</span>
+            <span class="trust__star">★</span>
+            <p class="trust__desc">Яндекс.Карты</p>
+          </div>
+          <div class="trust__divider" aria-hidden="true"></div>
+          <div class="trust__item animate-on-scroll">
+            <div class="trust__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="trust__number" data-target="3">0</span>
+            <p class="trust__desc">Студии в городе</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 3: НАВИГАЦИЯ ПО СЦЕНАРИЯМ
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="scenarios section section--sand" id="scenarios">
+      <div class="container">
+        <h2 class="section__title section__title--centered decorated">Что вы ищете?</h2>
+        <div class="scenarios__grid">
+          <a href="#wedding" class="scenario-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=700&q=90" alt="Обручальные кольца" loading="lazy" class="scenario-card__img">
+            <div class="scenario-card__overlay"></div>
+            <div class="scenario-card__content">
+              <h3 class="scenario-card__title">К свадьбе</h3>
+              <p class="scenario-card__desc">Обручальные и помолвочные кольца</p>
+              <span class="scenario-card__arrow">→</span>
+            </div>
+          </a>
+          <a href="#gifts" class="scenario-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=90" alt="Подарочная упаковка украшений" loading="lazy" class="scenario-card__img">
+            <div class="scenario-card__overlay"></div>
+            <div class="scenario-card__content">
+              <h3 class="scenario-card__title">В подарок</h3>
+              <p class="scenario-card__desc">Украшения для особых людей</p>
+              <span class="scenario-card__arrow">→</span>
+            </div>
+          </a>
+          <a href="#order" class="scenario-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=700&q=90" alt="Ювелир за работой" loading="lazy" class="scenario-card__img">
+            <div class="scenario-card__overlay"></div>
+            <div class="scenario-card__content">
+              <h3 class="scenario-card__title">Создать своё</h3>
+              <p class="scenario-card__desc">Украшение по вашему эскизу</p>
+              <span class="scenario-card__arrow">→</span>
+            </div>
+          </a>
+          <a href="#catalog" class="scenario-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=700&q=90" alt="Каталог украшений" loading="lazy" class="scenario-card__img">
+            <div class="scenario-card__overlay"></div>
+            <div class="scenario-card__content">
+              <h3 class="scenario-card__title">Каталог</h3>
+              <p class="scenario-card__desc">Готовые изделия в наличии</p>
+              <span class="scenario-card__arrow">→</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 4: О СТУДИИ + УНИКАЛЬНЫЕ УСЛУГИ
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="about section" id="about">
+      <div class="about__inner">
+        <div class="about__image-wrap">
+          <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=900&q=90" alt="Мастер за работой над ювелирным изделием" loading="lazy" class="about__image" width="800" height="1000">
+        </div>
+        <div class="about__content">
+          <p class="section__label">О СТУДИИ</p>
+          <h2 class="section__title">
+            Dolce Vita —<br>
+            ювелирная студия<br>
+            с душой
+          </h2>
+          <p class="about__text">С 1968 года мы создаём украшения, которые становятся частью ваших историй. Каждое изделие — это диалог между мастером и человеком, который будет его носить.</p>
+          <div class="services-grid">
+            <div class="service-item animate-on-scroll">
+              <span class="service-item__icon">✦</span>
+              <h4 class="service-item__title">Изделия из титана</h4>
+              <p class="service-item__desc">Уникальный материал, гипоаллергенный</p>
+            </div>
+            <div class="service-item animate-on-scroll">
+              <span class="service-item__icon">✦</span>
+              <h4 class="service-item__title">3D-проект до изготовления</h4>
+              <p class="service-item__desc">Видите украшение до старта работ</p>
+            </div>
+            <div class="service-item animate-on-scroll">
+              <span class="service-item__icon">✦</span>
+              <h4 class="service-item__title">Кольца с отпечатком пальца</h4>
+              <p class="service-item__desc">Неповторимый личный символ</p>
+            </div>
+            <div class="service-item animate-on-scroll">
+              <span class="service-item__icon">✦</span>
+              <h4 class="service-item__title">Переплавка вашего золота</h4>
+              <p class="service-item__desc">Из старых украшений — новое</p>
+            </div>
+            <div class="service-item animate-on-scroll">
+              <span class="service-item__icon">✦</span>
+              <h4 class="service-item__title">Рассрочка без переплат</h4>
+              <p class="service-item__desc">Более 10 кредитных программ</p>
+            </div>
+            <div class="service-item animate-on-scroll">
+              <span class="service-item__icon">✦</span>
+              <h4 class="service-item__title">Гарантия 2 года</h4>
+              <p class="service-item__desc">На все изделия студии</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 5: ПОПУЛЯРНЫЕ ИЗДЕЛИЯ — каталог
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="catalog section section--white" id="catalog">
+      <div class="container">
+        <h2 class="section__title">Популярные украшения</h2>
+        <div class="catalog__filters">
+          <button type="button" class="filter-btn active" data-filter="all">Все</button>
+          <button type="button" class="filter-btn" data-filter="rings">Кольца</button>
+          <button type="button" class="filter-btn" data-filter="earrings">Серьги</button>
+          <button type="button" class="filter-btn" data-filter="necklace">Колье</button>
+          <button type="button" class="filter-btn" data-filter="bracelet">Браслеты</button>
+          <button type="button" class="filter-btn" data-filter="wedding">Обручальные</button>
+        </div>
+        <div class="catalog__grid">
+          <article class="product-card animate-on-scroll" data-category="rings">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&q=90" alt="Кольцо с сапфиром" loading="lazy" class="product-card__image">
+              <a href="#" class="product-card__overlay">Подробнее</a>
+              <button type="button" class="product-card__favorite" aria-label="Добавить в избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <h3 class="product-card__title">Кольцо с сапфиром</h3>
+            <p class="product-card__meta">Золото 585</p>
+            <p class="product-card__price">75 000 ₽</p>
+            <p class="product-card__installment">от 6 250 ₽/мес</p>
+          </article>
+          <article class="product-card animate-on-scroll" data-category="earrings">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&q=90" alt="Серьги Лотос" loading="lazy" class="product-card__image">
+              <a href="#" class="product-card__overlay">Подробнее</a>
+              <button type="button" class="product-card__favorite" aria-label="Добавить в избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <h3 class="product-card__title">Серьги «Лотос»</h3>
+            <p class="product-card__meta">Белое золото</p>
+            <p class="product-card__price">125 000 ₽</p>
+            <p class="product-card__installment">от 10 400 ₽/мес</p>
+          </article>
+          <article class="product-card animate-on-scroll" data-category="necklace">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1593398641678-a22a7db96e26?w=500&q=90" alt="Колье с бриллиантами" loading="lazy" class="product-card__image">
+              <a href="#" class="product-card__overlay">Подробнее</a>
+              <button type="button" class="product-card__favorite" aria-label="Добавить в избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <h3 class="product-card__title">Колье с бриллиантами</h3>
+            <p class="product-card__meta">Золото 585, бриллианты</p>
+            <p class="product-card__price">185 000 ₽</p>
+            <p class="product-card__installment">от 15 400 ₽/мес</p>
+          </article>
+          <article class="product-card animate-on-scroll" data-category="wedding">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1515562144867-924fbb69963d?w=500&q=90" alt="Обручальное кольцо" loading="lazy" class="product-card__image">
+              <a href="#" class="product-card__overlay">Подробнее</a>
+              <button type="button" class="product-card__favorite" aria-label="Добавить в избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <h3 class="product-card__title">Обручальное кольцо</h3>
+            <p class="product-card__meta">Платина</p>
+            <p class="product-card__price">95 000 ₽</p>
+            <p class="product-card__installment">от 7 900 ₽/мес</p>
+          </article>
+          <article class="product-card animate-on-scroll" data-category="bracelet">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343a?w=500&q=90" alt="Браслет из золота" loading="lazy" class="product-card__image">
+              <a href="#" class="product-card__overlay">Подробнее</a>
+              <button type="button" class="product-card__favorite" aria-label="Добавить в избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <h3 class="product-card__title">Браслет «Змейка»</h3>
+            <p class="product-card__meta">Золото 585</p>
+            <p class="product-card__price">65 000 ₽</p>
+            <p class="product-card__installment">от 5 400 ₽/мес</p>
+          </article>
+          <article class="product-card animate-on-scroll" data-category="rings">
+            <div class="product-card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&q=90" alt="Кольцо с изумрудом" loading="lazy" class="product-card__image">
+              <a href="#" class="product-card__overlay">Подробнее</a>
+              <button type="button" class="product-card__favorite" aria-label="Добавить в избранное"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+            </div>
+            <h3 class="product-card__title">Кольцо с изумрудом</h3>
+            <p class="product-card__meta">Золото 585</p>
+            <p class="product-card__price">145 000 ₽</p>
+            <p class="product-card__installment">от 12 000 ₽/мес</p>
+          </article>
+        </div>
+        <div class="catalog__cta">
+          <a href="#" class="btn btn--secondary">Смотреть весь каталог</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 6: СВАДЬБА И ПОМОЛВКА
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="wedding section section--dark" id="wedding">
+      <div class="wedding__inner">
+        <div class="wedding__image-wrap">
+          <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=1200&q=90" alt="Пара обручальных колец на руках" loading="lazy" class="wedding__image" width="1000" height="800">
+        </div>
+        <div class="wedding__content">
+          <p class="section__label section__label--light">ДЛЯ ОСОБЫХ МОМЕНТОВ</p>
+          <h2 class="section__title section__title--light section__title--italic">
+            Ваши обручальные кольца —<br>
+            это ваша история
+          </h2>
+          <p class="wedding__text">Помогаем парам создать украшения, которые расскажут о вас всё без слов. Классика или авторский дизайн — от первого эскиза до готового изделия.</p>
+          <div class="wedding__package">
+            <p class="wedding__package-title">При заказе парных колец:</p>
+            <ul class="wedding__package-list">
+              <li>✦ Гравировка в подарок</li>
+              <li>✦ Фирменная подарочная упаковка</li>
+              <li>✦ Бесплатная примерка в студии</li>
+            </ul>
+          </div>
+          <div class="wedding__buttons">
+            <a href="#catalog" class="btn btn--primary">Смотреть обручальные кольца</a>
+            <a href="#consultation" class="btn btn--ghost">Записаться на консультацию</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 7: КАК МЫ РАБОТАЕМ — этапы создания
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="stages section" id="order">
+      <div class="container">
+        <h2 class="section__title decorated">Этапы создания украшения</h2>
+        <p class="section__subtitle">От вашей идеи до готового изделия — 5 шагов</p>
+        <div class="stages__timeline">
+          <div class="stage-item animate-on-scroll">
+            <span class="stage-item__num">1</span>
+            <h4 class="stage-item__title">Рассказываете об идее</h4>
+            <p class="stage-item__desc">По телефону, в мессенджере или в студии — как вам удобнее</p>
+          </div>
+          <div class="stage-item animate-on-scroll">
+            <span class="stage-item__num">2</span>
+            <h4 class="stage-item__title">Создаём эскиз и 3D-модель</h4>
+            <p class="stage-item__desc">Вы видите, как будет выглядеть украшение, до начала работы</p>
+          </div>
+          <div class="stage-item animate-on-scroll">
+            <span class="stage-item__num">3</span>
+            <h4 class="stage-item__title">Согласуем и утверждаем</h4>
+            <p class="stage-item__desc">Вносим правки, пока результат не будет именно таким, как вы хотите</p>
+          </div>
+          <div class="stage-item animate-on-scroll">
+            <span class="stage-item__num">4</span>
+            <h4 class="stage-item__title">Изготавливаем</h4>
+            <p class="stage-item__desc">Мастера работают с лучшими материалами в нашей мастерской в СПб</p>
+          </div>
+          <div class="stage-item animate-on-scroll">
+            <span class="stage-item__num">5</span>
+            <h4 class="stage-item__title">Передаём готовое изделие</h4>
+            <p class="stage-item__desc">В фирменной упаковке. Доставка по Петербургу и всей России</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 8: ВЫПОЛНЕННЫЕ РАБОТЫ / ПОРТФОЛИО
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="portfolio section section--sand" id="portfolio">
+      <div class="container">
+        <h2 class="section__title">Выполненные работы</h2>
+        <div class="portfolio__filters">
+          <button type="button" class="filter-btn active" data-portfolio-filter="all">Все</button>
+          <button type="button" class="filter-btn" data-portfolio-filter="rings">Кольца</button>
+          <button type="button" class="filter-btn" data-portfolio-filter="earrings">Серьги</button>
+          <button type="button" class="filter-btn" data-portfolio-filter="custom">На заказ</button>
+          <button type="button" class="filter-btn" data-portfolio-filter="wedding">Свадебные</button>
+        </div>
+        <div class="portfolio__masonry">
+          <a href="#" class="portfolio-item animate-on-scroll" data-portfolio-category="rings">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=500&q=90" alt="Кольцо с сапфиром" loading="lazy">
+            <div class="portfolio-item__overlay">
+              <h4>Кольцо «Небесный сапфир»</h4>
+              <p>Золото 585, сапфир</p>
+              <span class="btn btn--ghost btn--small">Подробнее</span>
+            </div>
+          </a>
+          <a href="#" class="portfolio-item portfolio-item--tall animate-on-scroll" data-portfolio-category="earrings">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&q=90" alt="Серьги Лотос" loading="lazy">
+            <div class="portfolio-item__overlay">
+              <h4>Серьги «Лотос»</h4>
+              <p>Белое золото</p>
+              <span class="btn btn--ghost btn--small">Подробнее</span>
+            </div>
+          </a>
+          <a href="#" class="portfolio-item animate-on-scroll" data-portfolio-category="wedding">
+            <img src="https://images.unsplash.com/photo-1515562144867-924fbb69963d?w=500&q=90" alt="Обручальные кольца" loading="lazy">
+            <div class="portfolio-item__overlay">
+              <h4>Парные кольца</h4>
+              <p>Платина</p>
+              <span class="btn btn--ghost btn--small">Подробнее</span>
+            </div>
+          </a>
+          <a href="#" class="portfolio-item portfolio-item--wide animate-on-scroll" data-portfolio-category="custom">
+            <img src="https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=700&q=90" alt="Индивидуальный заказ" loading="lazy">
+            <div class="portfolio-item__overlay">
+              <h4>Колье на заказ</h4>
+              <p>Золото 585, изумруды</p>
+              <span class="btn btn--ghost btn--small">Подробнее</span>
+            </div>
+          </a>
+          <a href="#" class="portfolio-item animate-on-scroll" data-portfolio-category="rings">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&q=90" alt="Кольцо с изумрудом" loading="lazy">
+            <div class="portfolio-item__overlay">
+              <h4>Кольцо «Изумруд»</h4>
+              <p>Золото 585</p>
+              <span class="btn btn--ghost btn--small">Подробнее</span>
+            </div>
+          </a>
+          <a href="#" class="portfolio-item portfolio-item--tall animate-on-scroll" data-portfolio-category="earrings">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=90" alt="Серьги-подвески" loading="lazy">
+            <div class="portfolio-item__overlay">
+              <h4>Серьги-подвески</h4>
+              <p>Золото 585, бриллианты</p>
+              <span class="btn btn--ghost btn--small">Подробнее</span>
+            </div>
+          </a>
+        </div>
+        <div class="portfolio__cta">
+          <a href="#" class="btn btn--secondary">Смотреть все работы</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 9: ПОЧЕМУ DOLCE VITA — круговая диаграмма
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="why section section--dark" id="why">
+      <div class="container">
+        <h2 class="why__title">Почему DOLCE VITA?</h2>
+        <div class="why__circle">
+          <div class="why__center">Почему DOLCE VITA?</div>
+          <ul class="why__list">
+            <li class="why__item animate-on-scroll"><span class="why__icon">✦</span> 55 лет опыта в Петербурге</li>
+            <li class="why__item animate-on-scroll"><span class="why__icon">✦</span> Уникальные материалы — титан, платина</li>
+            <li class="why__item animate-on-scroll"><span class="why__icon">✦</span> 3D-проект до изготовления</li>
+            <li class="why__item animate-on-scroll"><span class="why__icon">✦</span> Гарантия 2 года на каждое изделие</li>
+            <li class="why__item animate-on-scroll"><span class="why__icon">✦</span> Рассрочка без переплат</li>
+            <li class="why__item animate-on-scroll"><span class="why__icon">✦</span> Кольца с отпечатком пальца</li>
+            <li class="why__item animate-on-scroll"><span class="why__icon">✦</span> Переплавка вашего золота</li>
+            <li class="why__item animate-on-scroll"><span class="why__icon">✦</span> 3 студии — можно прийти лично</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 10: ОТЗЫВЫ (слайдер)
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="reviews section" id="reviews">
+      <div class="container">
+        <h2 class="section__title">Что говорят клиенты</h2>
+        <p class="section__subtitle">4.9 ★ на Яндекс.Картах · 165 отзывов</p>
+        <div class="reviews__slider">
+          <div class="reviews__track">
+            <div class="review-card">
+              <span class="review-card__quote">«</span>
+              <p class="review-card__text">Делали обручальные кольца на заказ. Всё от эскиза до готового изделия — на высшем уровне. Мастер учёл все наши пожелания, консультировал по ходу работы. Результатом очень довольны.</p>
+              <p class="review-card__author">Анна С., Санкт-Петербург</p>
+              <div class="review-card__stars">★★★★★</div>
+              <img src="https://images.unsplash.com/photo-1515562144867-924fbb69963d?w=150&q=90" alt="" class="review-card__thumb" loading="lazy">
+            </div>
+            <div class="review-card">
+              <span class="review-card__quote">«</span>
+              <p class="review-card__text">Покупала колье для мамы — качество и сервис выше всяких похвал. Помогли подобрать под образ, упаковали как подарок. Мама в восторге.</p>
+              <p class="review-card__author">Мария К., Москва</p>
+              <div class="review-card__stars">★★★★★</div>
+              <img src="https://images.unsplash.com/photo-1593398641678-a22a7db96e26?w=150&q=90" alt="" class="review-card__thumb" loading="lazy">
+            </div>
+            <div class="review-card">
+              <span class="review-card__quote">«</span>
+              <p class="review-card__text">Заказал кольцо с отпечатком пальца жены — получилось очень личное и красивое. Студия сдержала все сроки, консультация была подробной.</p>
+              <p class="review-card__author">Дмитрий П., Санкт-Петербург</p>
+              <div class="review-card__stars">★★★★★</div>
+              <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=150&q=90" alt="" class="review-card__thumb" loading="lazy">
+            </div>
+          </div>
+          <button type="button" class="reviews__prev" aria-label="Предыдущий отзыв">←</button>
+          <button type="button" class="reviews__next" aria-label="Следующий отзыв">→</button>
+          <div class="reviews__dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 11: НАШИ ЮВЕЛИРЫ
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="jewelers section section--sand" id="jewelers">
+      <div class="container">
+        <h2 class="section__title">Ваш ювелир</h2>
+        <p class="jewelers__intro">Каждый заказ ведёт конкретный мастер — вы всегда знаете, кто создаёт ваше украшение</p>
+        <div class="jewelers__grid">
+          <div class="jeweler-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=90" alt="Дмитрий Смирнов, ювелир" loading="lazy" class="jeweler-card__photo">
+            <h4 class="jeweler-card__name">Дмитрий Смирнов</h4>
+            <p class="jeweler-card__spec">Обручальные кольца, индивидуальные заказы</p>
+            <p class="jeweler-card__exp">18 лет в профессии</p>
+            <span class="jeweler-card__signature">✒</span>
+          </div>
+          <div class="jeweler-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=90" alt="Алексей Петров, ювелир" loading="lazy" class="jeweler-card__photo">
+            <h4 class="jeweler-card__name">Алексей Петров</h4>
+            <p class="jeweler-card__spec">Сложные камни, титан, платина</p>
+            <p class="jeweler-card__exp">15 лет в профессии</p>
+            <span class="jeweler-card__signature">✒</span>
+          </div>
+          <div class="jeweler-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&q=90" alt="Елена Козлова, ювелир" loading="lazy" class="jeweler-card__photo">
+            <h4 class="jeweler-card__name">Елена Козлова</h4>
+            <p class="jeweler-card__spec">Украшения для женщин, гравировка</p>
+            <p class="jeweler-card__exp">12 лет в профессии</p>
+            <span class="jeweler-card__signature">✒</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 12: КОРПОРАТИВНЫМ КЛИЕНТАМ
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="corporate section" id="corporate">
+      <div class="corporate__inner">
+        <div class="corporate__info">
+          <h2 class="section__title section__title--light">Корпоративным клиентам</h2>
+          <p class="corporate__text">Подарки сотрудникам, партнёрам и клиентам. Фирменная гравировка, брендирование, оптовые условия.</p>
+          <ul class="corporate__list">
+            <li><span class="corporate__icon">✦</span> Персональный менеджер</li>
+            <li><span class="corporate__icon">✦</span> Гибкие условия</li>
+            <li><span class="corporate__icon">✦</span> Быстрые сроки</li>
+          </ul>
+          <a href="#consultation" class="btn btn--primary">Обсудить заказ</a>
+        </div>
+        <div class="corporate__form-wrap">
+          <form class="corporate-form" id="corporateForm">
+            <label class="form-group">
+              <span class="form-label">Имя</span>
+              <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+            </label>
+            <label class="form-group">
+              <span class="form-label">Компания</span>
+              <input type="text" name="company" placeholder="Название компании" autocomplete="organization">
+            </label>
+            <label class="form-group">
+              <span class="form-label">Телефон или email</span>
+              <input type="text" name="contact" placeholder="Телефон или email" autocomplete="email" required>
+            </label>
+            <label class="form-group">
+              <span class="form-label">Что нужно</span>
+              <textarea name="message" rows="3" placeholder="Опишите ваш запрос"></textarea>
+            </label>
+            <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+          </form>
+          <p class="corporate__alt">Или напишите напрямую: <a href="mailto:info@d-vita.ru">info@d-vita.ru</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 13: ФОРМА ЗАПИСИ НА КОНСУЛЬТАЦИЮ
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="consultation section section--accent" id="consultation">
+      <div class="container">
+        <h2 class="section__title section__title--light section__title--centered">Запишитесь на бесплатную консультацию</h2>
+        <p class="consultation__text">Приходите в студию или созвонитесь с ювелиром. Расскажите об идее — мы поможем её воплотить.</p>
+        <form class="consultation-form" id="consultationForm">
+          <div class="consultation-form__inputs">
+            <label class="form-group">
+              <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required>
+            </label>
+            <label class="form-group">
+              <input type="text" name="phone" placeholder="Телефон или Telegram" autocomplete="tel" required>
+            </label>
+            <button type="submit" class="btn btn--primary btn--consult">Записаться →</button>
+          </div>
+        </form>
+        <p class="consultation__or">Или напишите нам прямо сейчас:</p>
+        <div class="consultation__buttons">
+          <a href="https://wa.me/78126066970" class="btn btn--ghost btn--light" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://t.me/dolcevita_spb" class="btn btn--ghost btn--light" target="_blank" rel="noopener">Telegram</a>
+          <a href="tel:+78126066970" class="btn btn--ghost btn--light">Позвонить</a>
+        </div>
+        <p class="consultation__addresses">м. Достоевская, ул. Рубинштейна, 6 · м. Московская, Ленинский пр., 153</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 14: ДРУГИЕ УСЛУГИ
+         ═══════════════════════════════════════════════════════════════ -->
+    <section class="services section" id="services">
+      <div class="container">
+        <h2 class="section__title">Другие услуги</h2>
+        <div class="services__grid">
+          <a href="#" class="service-tile animate-on-scroll">
+            <span class="service-tile__icon">✦</span>
+            <span>Ремонт украшений</span>
+          </a>
+          <a href="#" class="service-tile animate-on-scroll">
+            <span class="service-tile__icon">✦</span>
+            <span>Чистка и полировка</span>
+          </a>
+          <a href="#" class="service-tile animate-on-scroll">
+            <span class="service-tile__icon">✦</span>
+            <span>Изменение размера</span>
+          </a>
+          <a href="#" class="service-tile animate-on-scroll">
+            <span class="service-tile__icon">✦</span>
+            <span>Гравировка</span>
+          </a>
+          <a href="#" class="service-tile animate-on-scroll">
+            <span class="service-tile__icon">✦</span>
+            <span>Родирование</span>
+          </a>
+          <a href="#" class="service-tile animate-on-scroll">
+            <span class="service-tile__icon">✦</span>
+            <span>Переплавка золота</span>
+          </a>
+          <a href="#" class="service-tile animate-on-scroll">
+            <span class="service-tile__icon">✦</span>
+            <span>Ювелирная экспертиза</span>
+          </a>
+          <a href="#" class="service-tile animate-on-scroll">
+            <span class="service-tile__icon">✦</span>
+            <span>Подарочные сертификаты</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         БЛОК 15: ПОДВАЛ (Footer)
+         ═══════════════════════════════════════════════════════════════ -->
+    <footer class="footer section section--dark">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <a href="#" class="footer__logo">DOLCE VITA</a>
+            <p class="footer__slogan">Ювелирная студия Петербурга с 1968 года</p>
+            <div class="footer__social">
+              <a href="#" class="footer__social-link" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+              <a href="#" class="footer__social-link" aria-label="ВКонтакте" target="_blank" rel="noopener">VK</a>
+              <a href="#" class="footer__social-link" aria-label="Telegram" target="_blank" rel="noopener">Telegram</a>
+            </div>
+          </div>
+          <nav class="footer__col footer__nav" aria-label="Подвал навигация">
+            <a href="#catalog">Каталог</a>
+            <a href="#wedding">К свадьбе</a>
+            <a href="#order">На заказ</a>
+            <a href="#scenarios">Подарки</a>
+            <a href="#about">О студии</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#corporate">Корпоративным клиентам</a>
+            <a href="#">Доставка и оплата</a>
+            <a href="#">Гарантия</a>
+            <a href="#">Возврат</a>
+          </nav>
+          <div class="footer__col footer__addresses">
+            <address>
+              <p><strong>м. Достоевская</strong><br>ул. Рубинштейна, 6 (вход во двор)<br>пн-пт 11:00–19:00, сб-вс 12:00–19:00</p>
+              <p><strong>м. Московская</strong><br>Ленинский пр., 153, офис 131<br>пн-пт 11:00–19:00</p>
+              <p><strong>м. Комендантский проспект</strong><br>по предварительной записи</p>
+            </address>
+          </div>
+          <div class="footer__col footer__contacts">
+            <a href="tel:+78126066970" class="footer__phone">+7 (812) 606-69-70</a>
+            <a href="mailto:info@d-vita.ru" class="footer__email">info@d-vita.ru</a>
+            <a href="https://wa.me/78126066970" target="_blank" rel="noopener" class="footer__whatsapp">WhatsApp</a>
+            <a href="#consultation" class="btn btn--primary btn--small">Записаться на консультацию</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>© 2025 Dolce Vita. Ювелирная студия</p>
+          <a href="#">Политика конфиденциальности</a>
+          <p class="footer__reg">Свидетельство о постановке на спецучёт: ИП7803004873</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Sticky WhatsApp кнопка -->
+  <a href="https://wa.me/78126066970" class="whatsapp-float" title="Написать нам" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+      <path d="M16 0C7.164 0 0 7.164 0 16c0 2.824.738 5.477 2.03 7.783L.084 31.23l7.57-1.984A15.92 15.92 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.333c-2.56 0-5.04-.74-7.163-2.133l-.51-.3-5.29 1.387 1.415-5.154-.334-.532A13.267 13.267 0 012.667 16c0-7.364 5.97-13.333 13.333-13.333S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.308-10.058c-.393-.197-2.318-1.144-2.677-1.274-.36-.13-.621-.197-.882.197-.26.393-1.016 1.274-1.245 1.536-.23.261-.459.295-.852.098-.393-.197-1.658-.612-2.16-1.94-.5-1.327-.56-2.308.585-3.58.637-.663 1.112-1.694 1.258-2.275.146-.58-.065-.871-.52-1.174-.26-.173-.624-.447-.876-.67-.251-.224-.418-.336-.564-.565-.146-.23-.123-.431-.085-.58.094-.39.472-.964.646-1.294.174-.328.232-.547.348-.548.116 0 .261.003.4 0 .139-.003.326-.057.51.375.183.434.624 1.51.68 1.62.054.109.092.238.015.384-.077.146-.116.25-.232.38-.116.132-.247.293-.356.401-.118.119-.24.25-.102.488.136.237.61 1.006 1.306 1.632.898.811 1.655 1.063 1.893 1.187.237.123.377.105.517-.063.14-.168.602-.703.764-.943.162-.241.324-.2.544-.12.22.08 1.393.657 1.632.777.24.12.4.176.458.272.058.095.058.551-.335.948z"/>
+    </svg>
+    <span class="whatsapp-float__tooltip">Написать нам</span>
+  </a>
+
+  <!-- Структурированные данные -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "JewelryStore",
+    "name": "Dolce Vita",
+    "description": "Ювелирная студия в Санкт-Петербурге с 1968 года",
+    "url": "https://d-vita.ru",
+    "telephone": "+7-812-606-69-70",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Рубинштейна, 6",
+      "addressLocality": "Санкт-Петербург",
+      "addressCountry": "RU"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "165"
+    }
+  }
+  </script>
+
+  <script src="js/main.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+/* ═══════════════════════════════════════════════════════════════
+   RESPONSIVE — адаптив для всех breakpoints
+   ═══════════════════════════════════════════════════════════════ */
+
+/* 1280px — планшеты и маленькие десктопы */
+@media (max-width: 1280px) {
+  .section {
+    padding: var(--space-20) 0;
+  }
+
+  .hero__content {
+    padding: var(--space-16) var(--space-10);
+  }
+
+  .about__content,
+  .wedding__content,
+  .corporate__info,
+  .corporate__form-wrap {
+    padding: var(--space-16) var(--space-10);
+  }
+
+  .catalog__grid,
+  .portfolio__masonry {
+    gap: var(--space-6);
+  }
+}
+
+/* 1024px — планшеты */
+@media (max-width: 1024px) {
+  .header__nav,
+  .header__contacts {
+    display: none;
+  }
+
+  .header__burger {
+    display: flex;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 1fr;
+  }
+
+  .hero__image-wrap {
+    order: -1;
+  }
+
+  .hero__content {
+    padding: var(--space-10) var(--space-6);
+    text-align: center;
+  }
+
+  .hero__image-wrap::after {
+    background: linear-gradient(180deg, transparent 30%, rgba(44, 36, 32, 0.2) 100%);
+  }
+
+  .hero__title {
+    font-size: clamp(2.5rem, 8vw, 3rem);
+  }
+
+  .hero__text {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero__buttons {
+    justify-content: center;
+  }
+
+  .trust__grid {
+    flex-wrap: wrap;
+  }
+
+  .trust__item {
+    flex: 1 1 45%;
+    margin-bottom: var(--space-6);
+  }
+
+  .trust__divider {
+    display: none;
+  }
+
+  .scenarios__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about__image-wrap {
+    min-height: 400px;
+  }
+
+  .about__content {
+    padding: var(--space-12) var(--space-6);
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .wedding__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .wedding__image-wrap {
+    min-height: 400px;
+  }
+
+  .wedding__content {
+    padding: var(--space-12) var(--space-6);
+  }
+
+  .stages__timeline {
+    flex-direction: column;
+    gap: var(--space-8);
+  }
+
+  .stages__timeline::before {
+    display: none;
+  }
+
+  .stage-item {
+    max-width: 100%;
+    text-align: left;
+    padding-left: var(--space-12);
+    position: relative;
+  }
+
+  .stage-item__num {
+    position: absolute;
+    left: 0;
+    top: -8px;
+  }
+
+  .portfolio__masonry {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why__list {
+    flex-direction: column;
+  }
+
+  .review-card {
+    padding: var(--space-10) var(--space-6) var(--space-10) var(--space-10);
+  }
+
+  .review-card__text,
+  .review-card__author,
+  .review-card__stars {
+    padding-left: var(--space-8);
+  }
+
+  .review-card__thumb {
+    display: none;
+  }
+
+  .reviews__prev {
+    left: var(--space-2);
+  }
+
+  .reviews__next {
+    right: var(--space-2);
+  }
+
+  .jewelers__grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .corporate__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .consultation-form__inputs {
+    flex-direction: column;
+  }
+
+  .consultation-form__inputs .form-group {
+    min-width: 100%;
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 768px — мобильные */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--container-padding-mobile);
+  }
+
+  .section {
+    padding: var(--section-padding-mobile) 0;
+  }
+
+  .section__title {
+    font-size: clamp(var(--text-2xl), 6vw, var(--text-3xl));
+  }
+
+  .hero {
+    min-height: auto;
+    grid-template-rows: 50vh auto;
+  }
+
+  .hero__title {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .hero__facts {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    padding-bottom: var(--space-2);
+    scroll-snap-type: x mandatory;
+  }
+
+  .trust__item {
+    flex: 1 1 100%;
+  }
+
+  .scenarios__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .catalog__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .filter-btn {
+    min-height: 44px;
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .portfolio__masonry {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .portfolio-item--wide {
+    grid-column: span 1;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .service-tile {
+    min-height: 120px;
+    padding: var(--space-6);
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-8);
+  }
+
+  .footer__social {
+    justify-content: center;
+  }
+
+  .footer__nav {
+    align-items: center;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+  }
+}
+
+/* 480px — маленькие мобильные */
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: clamp(1.875rem, 10vw, 2.25rem);
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .hero__buttons .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .wedding__buttons .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .consultation-form__inputs .btn--consult {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .consultation__buttons {
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .consultation__buttons .btn {
+    width: 100%;
+    min-height: 48px;
+  }
+
+  .product-card__favorite {
+    width: 40px;
+    height: 40px;
+    top: var(--space-2);
+    right: var(--space-2);
+  }
+}
+
+/* Блокировка скролла при открытом меню */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Бургер в состояние крестика при открытии */
+.header__burger--open .header__burger-line:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.header__burger--open .header__burger-line:nth-child(2) {
+  opacity: 0;
+}
+.header__burger--open .header__burger-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
